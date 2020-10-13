@@ -24,7 +24,6 @@ def RunSpeedtest():
     ping = ping[0].replace(',', '.')
     download = download[0].replace(',', '.')
     upload = upload[0].replace(',', '.')
-    return(ping, download, upload)
 
 def print_results():
     os.system('clear')
@@ -43,10 +42,6 @@ def socket_exception():
     print('NO INTERNET CONNECTION!')
     time.sleep(5)
 
-def plot_results():
-    plx.plot(download)
-    plx.plot(upload)
-    plx.plot(ping)
 
 while True:
 
